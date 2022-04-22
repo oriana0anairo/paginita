@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiendita</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/de4460d3ca.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+
+
+        
+        <div class="navegacion">
+            <div class="contenido">
+                <button id="Abrir" class="Abrir" onclick="mostrar()"> <i id="ra" class="fa-solid fa-bars"></i></button>
+                <button id="Cerrar" class="Cerrar" onclick="ocultar()"> <i id="ra" class="fa-solid fa-bars"></i></button>  
+            </div>
+            <nav id="Nav" class="Nav">
+                <ul>
+                    <li><a href="#">Incio</a></li>
+                    <li><a href="#">Servicios</a></li>
+                    <li><a href="#">Posts</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+                       
+        </div>
+        <script>
+            function mostrar() {
+                document.getElementById("Nav").style.display = "block";
+                document.getElementById("Abrir").style.display = "none";
+                document.getElementById("Cerrar").style.display = "inline";
+            }
+
+            function ocultar() {
+                document.getElementById("Nav").style.display = "none";
+                document.getElementById("Abrir").style.display = "inline";
+                document.getElementById("Cerrar").style.display = "none";
+            }
+        </script>
+        <div>
+            <img src="img/inverted.png">
+        </div>
+        <div class="Buscador">
+            <input type="search" placeholder="Buscar" id="Buscar">
+            <button class="Bus">Buscar</button>
+        </div>
+        <div class="User">
+            Nombre
+            <i class="fa-regular fa-user" style="font-size: 30px;"></i>
+        </div>
+    </header>
+    <main>
+        <div class="menu" >
+            <a href="#" class="item">Inicio</a>
+            <a href="#" class="item">Servicios</a>
+            <a href="#" class="item">Post</a>
+            <a href="#" class="item">Contacto</a>
+
+        </div>
+        <div class="imagen">
+            <img src="img/portada.jpg">
+        </div>
+
+        <div class="cuerpo">
+            <div>
+                <form class="aside">
+                    <h4 class="til">Aside</h4>
+                    
+                    <div class="cat">
+                        <h5>Categorias</h5>
+                        <input type="checkbox">#1
+                        <input type="checkbox">#2
+                        <input type="checkbox">#3
+                        <input type="checkbox">#4                    
+                    </div>
+                    <div class="ubi">
+                        <h5>Ubicacion</h5>
+                        <select>
+                        
+                            <option>Caracas</option>
+                            <option>Rusia</option>
+                            <option>Canada</option>
+                        </select>
+                    </div>
+                    
+                    <button class="boton">Buscar</button>
+                </from>
+            </div>
+        
+            <div class="productos">
+                <div class="cuadro">
+                    <img src="img/ropa 1.jpg">
+                    <div class="tex">
+                        Abrigo Y pantalon elegante marca Uhlala
+                    </div>
+                    <div class="precio">500$</div>    
+                </div>
+                <div class="cuadro">
+                    <img src="img/ropa 2.jpg">
+                    <div class="tex">
+                        Vestido bonito de Agatha Harknees marca MrFrench
+                    </div>
+                    <div class="precio">1000$</div>
+                </div>
+                <div class="cuadro">
+                    <img src="img/ropa 3.jpg">
+                    <div class="tex">
+                       Conjunto de niño bonito marca Agugutata  
+                    </div>
+                    <div class="precio">300$</div>
+                </div>
+                <div class="cuadro">
+                    <img src="img/ropa 4.webp">
+                    <div class="tex">
+                        Conjunto para unicas y diferetes marca I'mVegan
+                    </div>
+                    <div class="precio">2000$</div>
+                </div>
+                <div class="cuadro">
+                    <img src="img/ropa 5.jpg">
+                    <div class="tex">
+                        Sueter de lana radioactiva enriquecida marca TakeMyMoney
+                    </div>
+                    <div class="precio">8000$</div>
+                </div>
+                <div class="cuadro">
+                    <img src="img/ropa 6.jpg">
+                    <div class="tex">
+                        Camisa a cuadros manga larga maldita marca BUUUU
+                    </div>
+                    <div class="precio">1200$</div>
+                </div>
+            </div>
+        
+        </div>
+        
+
+    </main>
+    <footer>
+        <div class="piesito">
+            <div class="par">
+                Tiendita 2022
+            </div>
+            <div id="contacto" class="par">
+                Contacto
+            </div>
+            <div id="acerca"class="par">
+                Acerca de
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
